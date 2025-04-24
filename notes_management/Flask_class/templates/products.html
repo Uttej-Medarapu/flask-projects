@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Products{% endblock %}
+{% block head%}
+   <link rel="stylesheet" href="{{url_for('static',filename='css/products.css') }}">
+{% endblock %}   
+<body>
+    <nav style="background-color: black; padding: 10px; text-align: center;">
+        <a href="/" style="color: white; margin: 10px;">Home</a>
+        <a href="/about" style="color: white; margin: 10px;">About</a>
+        <a href="/contact" style="color: white; margin: 10px;">Contact</a>
+        <a href="/products" style="color: white; margin: 10px;">Products</a>
+        <a href="/registration" style="color: white; margin: 10px;">Registration</a>
+        <a href="/login" style="color: white; margin: 10px;">Login</a>
+    </nav>
+    {% block content %}
+    <p>welcome {{email}}!!!</p>
+    <p>you have successfully logggeg in </p>
+    <h1>Welcome to Product page</h1>
+    <p>This is a simple product page.</p>
+    <footer><p>&copy; 2025 Your Company Name. All rights reserved.</p></footer>
+    {% endblock %}

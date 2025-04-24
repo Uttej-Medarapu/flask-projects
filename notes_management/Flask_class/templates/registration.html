@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}registration Page{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/registration.css') }}">
+{% endblock %}
+
+    <!-- Navigation bar -->
+    <nav style="background-color: black; padding: 10px; text-align: center;">
+        <a href="/" style="color: white; margin: 10px;">Home</a>
+        <a href="/about" style="color: white; margin: 10px;">About</a>
+        <a href="/contact" style="color: white; margin: 10px;">Contact</a>
+        <a href="/products" style="color: white; margin: 10px;">Products</a>
+        <a href="/registration" style="color: white; margin: 10px;">Registration</a>
+        <a href="/login" style="color: white; margin: 10px;">Login</a>
+    </nav>
+    {% block content %}
+    <h1>Welcome to Registration page</h1>
+    <p>This is a simple registration page.</p>
+    <!-- Registration form -->
+    <form action="/registration" method="POST">
+        <h2>Registration</h2>
+
+        <label for="name">Full Name</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Registration">
+    </form>
+   
+{% endblock %}

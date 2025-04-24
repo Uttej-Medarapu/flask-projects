@@ -1,0 +1,151 @@
+body {
+    background-color: #f9fafb; /* Soft off-white background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black; /* Slightly darker for better contrast */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container */
+.dashboard-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 25px;
+    background-color: bisque; /* White background for the dashboard */
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Dashboard Heading */
+.dashboard-container h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: black; /* Soft, dark grayish blue */
+    margin-bottom: 12px;
+}
+
+/* Dashboard Description */
+.dashboard-container p {
+    text-align: center;
+    color:black; /* Lighter gray for the description */
+}
+
+/* Notes Grid */
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Note Box */
+.note-box {
+    background-color: #f9faff; /* Very light blue */
+    border: 2px solid #76b0f0; /* Soft blue border */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.note-box:hover {
+    transform: scale(1.02); /* Smooth scale effect */
+}
+
+/* Note Header */
+.note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Note Date */
+.note-date {
+    font-size: 0.85em;
+    color: black; /* Muted grayish blue for date */
+}
+
+/* Note Actions */
+.note-actions a {
+    margin-left: 12px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+/* Edit and Delete Buttons */
+.edit-btn {
+    
+    color: greenyellow; /* Soft teal color for editing */
+}
+
+.delete-btn {
+    color: red; /* Soft red color for delete */
+}
+
+/* Note Content */
+.note-content {
+    margin-top: 15px;
+    font-size: 1em;
+    line-height: 1.6;
+    color:black; /* Slightly dark gray for the note text */
+}
+
+/* Add New Note Box */
+.note-box.add-new {
+    margin-top: 50px;
+    border: 2px solid black; /* Light pastel blue dashed border */
+
+    background-color: #f2f9fe; /* Soft light blue background */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.note-box.add-new:hover {
+    background-color: #e2f3fd; /* Light, airy blue on hover */
+}
+
+.plus-icon {
+    font-size: 1.4em;
+    color: blue; /* Soft blue color */
+    font-weight: bold;
+}
+
+/* New Note Form */
+.new-note-form {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #d1d8e0; /* Light gray border */
+    background-color: #f7f9fc; /* Very light background color */
+    border-radius: 10px;
+}
+
+/* New Note Form Textarea */
+.new-note-form textarea {
+    width: 100%;
+    height: 120px;
+    border: 1px solid #d1d8e0; /* Soft border around textarea */
+    padding: 12px;
+    resize: vertical;
+    border-radius: 8px;
+    font-size: 1.1em;
+    color: #444;
+    background-color: #ffffff; /* White background for the input area */
+}
+
+/* New Note Form Button */
+.new-note-form button {
+    margin-top: 12px;
+    padding: 12px 25px;
+    background-color: #0ba0cd; /* Light teal button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.new-note-form button:hover {
+    background-color: green; /* green on hover */
+}

@@ -1,0 +1,45 @@
+/* Navbar Styling */
+.navbar {
+    background-color: yellow;
+    color: blue;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+    color: blue;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #dceeff;
+}
+
+.navbar span {
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+/* Responsive Option (Optional) */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .navbar div {
+        width: 100%;
+    }
+
+    .navbar a {
+        margin: 0 10px;
+    }
+}

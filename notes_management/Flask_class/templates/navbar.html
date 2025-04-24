@@ -1,0 +1,19 @@
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+{% endblock %}
+<nav class="navbar">
+  <div>
+    <a href="{{ url_for('dashboard') }}">Dashboard</a>
+  </div>
+  <div>
+    {% if session.get('username') %}
+      <span>Welcome, {{ session['username'] }}</span>
+      <a href="{{ url_for('logout') }}">Logout</a>
+    {% else %}
+      <a href="{{ url_for('login') }}">Login</a>
+      <a href="{{ url_for('registration') }}">registration</a>
+    {% endif %}
+  </div>
+</nav>
+
+  

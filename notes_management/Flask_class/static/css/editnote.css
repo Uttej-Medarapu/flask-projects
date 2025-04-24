@@ -1,0 +1,82 @@
+/* editnote.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:black;
+    margin: 0;
+    padding: 0;
+}
+
+.edit-note-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.edit-note-container h2 {
+    text-transform: capitalize;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333333;
+    text-align: center;
+}
+
+form textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+form textarea:focus {
+    border-color: #4a90e2;
+}
+
+.actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.save_btn,
+.cancel-btn {
+    flex: 1;
+    text-align: center;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.save_btn {
+    background-color: #4a90e2;
+    color: white;
+    text-decoration: none;
+}
+
+.save_btn:hover {
+    background-color: #357ab8;
+}
+
+.cancel-btn {
+    background-color: #e0e0e0;
+    color: #333333;
+    text-decoration: none;
+}
+
+.cancel-btn:hover {
+    background-color: #c7c7c7;
+}

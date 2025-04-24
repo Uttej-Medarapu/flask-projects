@@ -1,0 +1,41 @@
+.otp-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.otp-form label {
+    display: flex;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.otp-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+   
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+.error-msg {
+    color: red;
+    margin-bottom: 15px;
+}

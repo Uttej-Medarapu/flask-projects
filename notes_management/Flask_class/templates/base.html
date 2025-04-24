@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{% block title %}Notes app{% endblock %}</title>
+
+  <!-- Global CSS (applies to all pages) -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  {% block extra_css %}{% endblock %}
+  {% block head %}{% endblock %}
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  {% include 'navbar.html' %}
+
+  <!-- Main Content -->
+  <div class="container">
+    {% block content %}{% endblock %}
+  </div>
+
+  <!-- Footer -->
+  {% include 'footer.html' %}
+
+</body>
+</html>
